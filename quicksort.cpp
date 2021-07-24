@@ -8,11 +8,11 @@ void quicksort(vector<int>& arr, int left, int right){
         
   int flag = arr[i];
   while(i!=j){
-    while(arr[j]>=arr[i] && i<j){
+    while(i<j && arr[j]>=arr[i] ){
       j--;
     }
     swap(arr[i], arr[j]);
-    while(arr[i]<=arr[j] && i<j){
+    while(i<j && arr[i]<=arr[j]){
       i++;
     }
     swap(arr[i], arr[j]);
@@ -32,10 +32,10 @@ void  quicksort ( vector < int >&  arr , int  left , int  right ){
         
   int flag = arr[i];
   while(i!=j){
-    while(arr[j]>=flag && i<j){
+    while(i<j && arr[j]>=flag){
       j--;
     }
-    while(arr[i]<=flag && i<j){
+    while(i<j && arr[i]<=flag){
       i++;
     }
     swap(arr[i], arr[j]);
