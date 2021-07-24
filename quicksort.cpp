@@ -21,6 +21,7 @@ void quicksort(vector<int>& arr, int left, int right){
   quicksort(arr, i+1, right);
 }
 
+
 //另一种，flag不参与置换，最后归位flag。
 void  quicksort ( vector < int >&  arr , int  left , int  right ){
   if(left > right){
